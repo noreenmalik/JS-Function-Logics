@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions + Loops</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p><b>Q1 -</b> Write a function that takes your name and age as an input parameter and print it by using
+        string concatenation.
+    </p>
+
+    <p><b>Q2 -</b> Write a function name 'Double' that takes an input parameter and multiply that parameter
+        by 2 and store the result in a variable and call the function by passing an argument.
+    </p>
+
+    <p><b>Q3 -</b> Write a function to print the square of a number by using function expression and that
+        function can be used as variable value for other variables.
+    </p>
+
+    <p><b>Q4 -</b> Write an arrow function as an expression to check the age of the baby . If the age of the
+        baby is less than 18 print Baby else print adult.
+    </p>
+
+    <p><b>Q5 -</b> Write an arrow function and print a sum of two numbers by passing a single parameter
+        inside the arrow function.
+    </p>
+
+    <p><b>Q6 -</b> Write an object 'cities' and loop values of the object's properties by using for... in Loop
+        and print them.
+    </p>
+
+    <p><b>Q7 -</b> - Write a for...of loop to traverse the array and print the elements of an array with indices.
+    </p>
+
+    <p><b>Q8 -</b> Write an unnamed /anonymous function which calculates the area of a rectangle.
+    </p>
+
+
+
+
+
+    <!-- Java Script -->
+
+    <script>
+
+        // --------------------------  Q1 -----------------------------
+
+        // function pData(name, age) {
+
+        //     let str1 = prompt("Enter your Name")
+        //     let str2 = prompt("Enter your age")
+
+        //     let value = str1 + str2;
+        //     return value;
+        // }
+
+        // console.log(pData());
+
+        // --------------------------  Q2 -----------------------------
+
+        // function Double() {
+        //     let value = prompt("Enter a number")
+        //     let multipleOf2 = value * 2;
+        //     return console.log(multipleOf2)
+        // }
+        
+        // Double()
+        // --------------------------  Q3 -----------------------------
+
+        const square = function (number) {
+            let value = number ** 2;
+            return value;
+        };
+        console.log(square(4))
+
+        // let y= square;
+        // console.log(y)
+
+
+
+        // --------------------------  Q4 -----------------------------
+
+        let babyAge = (age) => {
+            if (age < 18) {
+                console.log("Baby")
+            } else {
+                console.log("Adult")
+            }
+        }
+        babyAge(12);
+
+        //  2nd method
+
+        // let age = 5;
+
+        // let welcome = (age < 18) ?
+        //   () => console.log('Baby') :
+        //   () => console.log('Adult');
+
+        // welcome(); // Baby
+
+
+        // --------------------------  Q5 -----------------------------
+
+
+        let sumOfnum = (sum) => {
+            let result = sum + sum;
+            return result;
+        }
+
+        console.log(sumOfnum(3));
+
+
+        // --------------------------  Q6 -----------------------------
+
+
+        const cities = {
+            Sindh: 'Karachi',
+            Balochistan: 'Quetta',
+            Punjab: 'Lahore',
+            KP: 'Peshawar',
+            Gilgit_Baltistan: 'Gilgit',
+            Azad_Kashmir: 'Muzaffarabad',
+            capital_city: 'Islamabad',
+        };
+
+        for (const key in cities) {
+            console.log(`${key} : ${cities[key]}`);
+        }
+
+        // --------------------------  Q7 -----------------------------
+
+
+        let names = ["Ali", "Ahmad", "Sara", "Muhammad", "Fatma", "Hira"]
+
+        for (const i of names) {
+
+        }
+        console.log(names);
+
+
+
+        // --------------------------  Q8 -----------------------------
+
+
+
+        let area_rec = function (width, length) {
+            let Area = width * length;
+            return Area;
+        };
+        console.log(area_rec(5, 3))
+
+
+
+    </script>
+
+</body>
+
+</html>
